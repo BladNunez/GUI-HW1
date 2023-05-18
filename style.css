@@ -3,11 +3,14 @@ body{
         padding:0;
 }
 
+/* Make whole web page into a column so containers can be easily styled*/
 .top-container{
         display: flex;
         flex-direction: column;
 }
 
+/* Header container on top of page styled to have border show and background color
+   to be gainsboro*/
 .header{
         display:flex;
         justify-content: space-around;
@@ -16,3 +19,53 @@ body{
         margin: 3px;
         background-color: gainsboro;
 }
+
+/*Container below the header should be flex display
+  this container holds 2 other containers so make them side by side*/
+.inner-container{
+        display: flex;
+}
+
+/* Style about me container*/
+.aboutMe{
+        min-width: 300px;
+        max-width: 400px;
+        margin: 10px;
+        border: 1px solid black;
+        height: 200px;
+        padding: 7px;
+        border-radius: 4px;
+        background-color:aliceblue;
+}
+
+.europe, .middleEast{
+        display: flex;
+}
+
+/*Style all figures containg imgs/captions to be same size and style text */
+figure{
+        min-width: 240px;
+        float: right;
+        text-align: center;
+        font-style: italic;
+        font-size:medium;
+        text-indent: 0;
+        margin: 0.5em;
+        padding: 0.5em;
+}
+
+.travels{
+        margin-top: 10px;
+}
+
+/* Center heading of travels */
+.travels > h1{
+        display: flex;
+        justify-content: center;
+}
+
+/* Make all images border radius 4px */
+img{
+        border-radius: 4px;
+}
+
