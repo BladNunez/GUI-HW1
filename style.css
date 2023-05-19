@@ -73,6 +73,7 @@ img{
         display: flex;
 }
 
+/*Move validation img manually */
 .validation{
         padding-top: 300px;
         position: relative;
